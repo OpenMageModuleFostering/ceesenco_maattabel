@@ -1,0 +1,829 @@
+<?xml version="1.0"?>
+<config>
+  <tabs>
+    <ceesenco translate="label">
+        <label>Cees &amp; Co</label>
+        <sort_order>100</sort_order>
+    </ceesenco>
+  </tabs> 
+	<sections>
+		<ceesenco_maattabel translate="label" module="maattabel"> 
+			<label>Sizing chart</label>
+			<tab>ceesenco</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>100</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<configuration translate="label">
+					<label>Sizing chart configuration</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>1</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<enabled translate="label">
+							<label>Enabled</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</enabled>
+						<accountid>
+							<label>Account ID</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</accountid>
+						<username>
+							<label>Account Login</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</username>
+						<password translate="label">
+							<label>Account Password</label>
+							<frontend_type>password</frontend_type>
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</password>
+						<width translate="label">
+							<label>iFrame width</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>5</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</width>
+						<height translate="label">
+							<label>iFrame height</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>6</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</height>
+						<label translate="label">
+							<label>Button name</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>7</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</label>
+						<lang translate="label">
+							<label>Language</label>
+							<frontend_type>select</frontend_type>
+							<source_model>maattabel/lang</source_model>
+							<sort_order>8</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</lang>
+					</fields>
+				</configuration>
+				<opmaak translate="label">
+					<label>Sizing chart layout</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>2</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+            <getopmaak translate="label comment">
+                <frontend_type>button</frontend_type>
+                <frontend_model>maattabel/getopmaak</frontend_model>
+                <sort_order>1</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>1</show_in_store>
+                <comment>With this the layout is loaded from your account on the sizing chart website</comment>
+            </getopmaak>
+						<heading_algemeen translate="label">
+              <label>General</label>
+              <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+              <sort_order>2</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </heading_algemeen>
+            <algemeen_lettertype translate="label">
+							<label>Font family</label>
+							<frontend_type>select</frontend_type>
+							<source_model>maattabel/lettertype</source_model>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</algemeen_lettertype>
+						<algemeen_tekstkleur translate="label">
+							<label>Text</label>
+							<frontend_type>text</frontend_type>
+							<validate>color</validate>
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</algemeen_tekstkleur>
+						<algemeen_hoverkleur translate="label">
+							<label>Hover</label>
+							<frontend_type>text</frontend_type>
+							<validate>color</validate>
+							<sort_order>5</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</algemeen_hoverkleur>
+						<algemeen_achtergrondkleur translate="label">
+							<label>Background</label>
+							<frontend_type>text</frontend_type>
+							<validate>color</validate>
+							<sort_order>6</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</algemeen_achtergrondkleur>
+						<heading_pagina translate="label">
+              <label>Page</label>
+              <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+              <sort_order>7</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </heading_pagina>
+            <pagina_achtergrond translate="label">
+							<label>Background</label>
+							<frontend_type>text</frontend_type>
+							<validate>color</validate>
+							<sort_order>8</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</pagina_achtergrond>
+						<heading_koptekst translate="label">
+              <label>Header</label>
+              <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+              <sort_order>9</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </heading_koptekst>
+            <koptekst_tekst translate="label">
+							<label>Text</label>
+							<frontend_type>text</frontend_type>
+							<validate>color</validate>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</koptekst_tekst>
+            <koptekst_link translate="label">
+							<label>Link</label>
+							<frontend_type>text</frontend_type>
+							<validate>color</validate>
+							<sort_order>11</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</koptekst_link>
+						<heading_menu translate="label">
+              <label>Menu (top right)</label>
+              <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+              <sort_order>12</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </heading_menu>
+            <menu_tekst translate="label">
+							<label>Text</label>
+							<frontend_type>text</frontend_type>
+							<validate>color</validate>
+							<sort_order>13</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</menu_tekst>
+            <menu_teksthover translate="label">
+							<label>Text (hover)</label>
+							<frontend_type>text</frontend_type>
+							<validate>color</validate>
+							<sort_order>14</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</menu_teksthover>
+            <menu_achtergrond translate="label">
+							<label>Background</label>
+							<frontend_type>text</frontend_type>
+							<validate>color</validate>
+							<sort_order>15</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</menu_achtergrond>
+						<heading_lint translate="label">
+              <label>Ribbon</label>
+              <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+              <sort_order>16</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </heading_lint>
+            <lint_tekst translate="label">
+							<label>Text</label>
+							<frontend_type>text</frontend_type>
+							<validate>color</validate>
+							<sort_order>17</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</lint_tekst>
+            <lint_achtergrond translate="label">
+							<label>Background</label>
+							<frontend_type>text</frontend_type>
+							<validate>color</validate>
+							<sort_order>18</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</lint_achtergrond>
+						<heading_help translate="label">
+              <label>Help tooltip</label>
+              <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+              <sort_order>19</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </heading_help>
+            <help_stijl translate="label">
+							<label>Style</label>
+							<frontend_type>select</frontend_type>
+							<source_model>maattabel/stijl</source_model>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</help_stijl>
+					</fields>
+				</opmaak>
+				<groepen translate="label">
+					<label>Sizing chart group visibility</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>3</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+            <getgroepen translate="label comment">
+                <frontend_type>button</frontend_type>
+                <frontend_model>maattabel/getgroepen</frontend_model>
+                <sort_order>1</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>1</show_in_store>
+                <comment>With this the group visibility settings are loaded from the sizing chart website</comment>
+            </getgroepen>
+						<heading_hoofdgroepen translate="label">
+              <label>Hoofdgroepen</label>
+              <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+              <sort_order>2</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </heading_hoofdgroepen>
+            <hoofdgroepen_dames translate="label">
+							<label>Women</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</hoofdgroepen_dames>
+						<hoofdgroepen_heren translate="label">
+							<label>Men</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</hoofdgroepen_heren>
+						<hoofdgroepen_meisjes translate="label">
+							<label>Girls</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>5</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</hoofdgroepen_meisjes>
+						<hoofdgroepen_jongens translate="label">
+							<label>Boys</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>6</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</hoofdgroepen_jongens>
+						<hoofdgroepen_kinderen translate="label">
+							<label>Children</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>7</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</hoofdgroepen_kinderen>
+						<heading_pagina translate="label">
+              <label>Women</label>
+              <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+              <sort_order>8</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_dames>1</hoofdgroepen_dames></depends>
+            </heading_pagina>
+            <dames_bh translate="label">
+							<label>Bras and Swimwear</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>9</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_dames>1</hoofdgroepen_dames></depends>
+						</dames_bh>
+            <dames_tops translate="label">
+							<label>Tops, Shirts, Blouses and Sweaters</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_dames>1</hoofdgroepen_dames></depends>
+						</dames_tops>
+            <dames_jurken translate="label">
+							<label>Dresses, Blazers and Jackets</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>11</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_dames>1</hoofdgroepen_dames></depends>
+						</dames_jurken>
+            <dames_rokken translate="label">
+              <label>Skirts</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+              <sort_order>12</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_dames>1</hoofdgroepen_dames></depends>
+            </dames_rokken>
+            <dames_broeken translate="label">
+							<label>Pants</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>13</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_dames>1</hoofdgroepen_dames></depends>
+						</dames_broeken>
+            <dames_jeans translate="label">
+							<label>Jeans</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>14</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_dames>1</hoofdgroepen_dames></depends>
+						</dames_jeans>
+            <dames_slips translate="label">
+							<label>Slips and Shapewear</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>15</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_dames>1</hoofdgroepen_dames></depends>
+						</dames_slips>
+            <dames_riemen translate="label">
+              <label>Belts</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+              <sort_order>16</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_dames>1</hoofdgroepen_dames></depends>
+            </dames_riemen>
+            <dames_schoenen translate="label">
+							<label>Shoes</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>17</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_dames>1</hoofdgroepen_dames></depends>
+						</dames_schoenen>
+            <dames_handschoenen translate="label">
+							<label>Gloves</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>18</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_dames>1</hoofdgroepen_dames></depends>
+						</dames_handschoenen>
+						<heading_heren translate="label">
+              <label>Men</label>
+              <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+              <sort_order>19</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_heren>1</hoofdgroepen_heren></depends>
+            </heading_heren>
+            <heren_truien translate="label">
+							<label>Sweaters, Outerwear and Blazers</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_heren>1</hoofdgroepen_heren></depends>
+						</heren_truien>
+            <heren_shirts translate="label">
+							<label>Shirts</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>21</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_heren>1</hoofdgroepen_heren></depends>
+						</heren_shirts>
+            <heren_jeans translate="label">
+							<label>Jeans</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>22</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_heren>1</hoofdgroepen_heren></depends>
+						</heren_jeans>
+            <heren_broeken translate="label">
+							<label>Pants</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>23</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_heren>1</hoofdgroepen_heren></depends>
+						</heren_broeken>
+            <heren_ondermode translate="label">
+							<label>Under and Swimwear</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>24</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_heren>1</hoofdgroepen_heren></depends>
+						</heren_ondermode>
+            <heren_riemen translate="label">
+							<label>Belts</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>25</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_heren>1</hoofdgroepen_heren></depends>
+						</heren_riemen>
+            <heren_schoenen translate="label">
+							<label>Shoes</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>26</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_heren>1</hoofdgroepen_heren></depends>
+						</heren_schoenen>
+            <heren_handschoenen translate="label">
+							<label>Gloves</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>27</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_heren>1</hoofdgroepen_heren></depends>
+						</heren_handschoenen>
+						<heading_jongens translate="label">
+              <label>Boys</label>
+              <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+              <sort_order>28</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_jongens>1</hoofdgroepen_jongens></depends>
+            </heading_jongens>
+            <jongens_truien translate="label">
+							<label>Sweaters, Outerwear and Blazers</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>29</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_jongens>1</hoofdgroepen_jongens></depends>
+						</jongens_truien>
+            <jongens_shirts translate="label">
+							<label>Shirts</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_jongens>1</hoofdgroepen_jongens></depends>
+						</jongens_shirts>
+            <jongens_ondermode translate="label">
+							<label>Under and Swimwear</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>31</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_jongens>1</hoofdgroepen_jongens></depends>
+						</jongens_ondermode>
+            <jongens_broeken translate="label">
+							<label>Pants</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>32</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_jongens>1</hoofdgroepen_jongens></depends>
+						</jongens_broeken>
+            <jongens_jeans translate="label">
+							<label>Jeans</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>33</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_jongens>1</hoofdgroepen_jongens></depends>
+						</jongens_jeans>
+            <jongens_schoenen translate="label">
+							<label>Shoes</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>34</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_jongens>1</hoofdgroepen_jongens></depends>
+						</jongens_schoenen>
+            <jongens_riemen translate="label">
+							<label>Belts</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>35</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_jongens>1</hoofdgroepen_jongens></depends>
+						</jongens_riemen>
+            <jongens_handschoenen translate="label">
+							<label>Gloves</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>36</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_jongens>1</hoofdgroepen_jongens></depends>
+						</jongens_handschoenen>
+						<heading_meisjes translate="label">
+              <label>Girls</label>
+              <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+              <sort_order>37</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_meisjes>1</hoofdgroepen_meisjes></depends>
+            </heading_meisjes>
+            <meisjes_bh translate="label">
+							<label>Bras and Swimwear</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>38</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_meisjes>1</hoofdgroepen_meisjes></depends>
+						</meisjes_bh>
+            <meisjes_truien translate="label">
+							<label>Sweaters, Blouses and Jackets</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>39</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_meisjes>1</hoofdgroepen_meisjes></depends>
+						</meisjes_truien>
+            <meisjes_tops translate="label">
+							<label>Tops and Shirts</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>40</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_meisjes>1</hoofdgroepen_meisjes></depends>
+						</meisjes_tops>
+            <meisjes_rokken translate="label">
+							<label>Skirts</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>41</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_meisjes>1</hoofdgroepen_meisjes></depends>
+						</meisjes_rokken>
+            <meisjes_broeken translate="label">
+							<label>Pants</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>42</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_meisjes>1</hoofdgroepen_meisjes></depends>
+						</meisjes_broeken>
+            <meisjes_jeans translate="label">
+							<label>Jeans</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>43</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_meisjes>1</hoofdgroepen_meisjes></depends>
+						</meisjes_jeans>
+            <meisjes_slips translate="label">
+							<label>Slips and Shapewear</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>44</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_meisjes>1</hoofdgroepen_meisjes></depends>
+						</meisjes_slips>
+            <meisjes_schoenen translate="label">
+							<label>Shoes</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>45</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_meisjes>1</hoofdgroepen_meisjes></depends>
+						</meisjes_schoenen>
+            <meisjes_handschoenen translate="label">
+							<label>Gloves</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>46</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_meisjes>1</hoofdgroepen_meisjes></depends>
+						</meisjes_handschoenen>
+						<heading_kinderen translate="label">
+              <label>Children</label>
+              <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+              <sort_order>47</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_kinderen>1</hoofdgroepen_kinderen></depends>
+            </heading_kinderen>
+            <kinderen_truien translate="label">
+							<label>Sweaters, Blouses and Jackets</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>48</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_kinderen>1</hoofdgroepen_kinderen></depends>
+						</kinderen_truien>
+            <kinderen_shirts translate="label">
+							<label>Shirts</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>49</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_kinderen>1</hoofdgroepen_kinderen></depends>
+						</kinderen_shirts>
+            <kinderen_jeans translate="label">
+							<label>Jeans</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>50</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_kinderen>1</hoofdgroepen_kinderen></depends>
+						</kinderen_jeans>
+            <kinderen_broeken translate="label">
+							<label>Pants</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>51</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_kinderen>1</hoofdgroepen_kinderen></depends>
+						</kinderen_broeken>
+            <kinderen_ondermode translate="label">
+							<label>Under and Swimwear</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>52</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_kinderen>1</hoofdgroepen_kinderen></depends>
+						</kinderen_ondermode>
+            <kinderen_schoenen translate="label">
+							<label>Shoes</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>53</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_kinderen>1</hoofdgroepen_kinderen></depends>
+						</kinderen_schoenen>
+            <kinderen_riemen translate="label">
+							<label>Belts</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>54</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_kinderen>1</hoofdgroepen_kinderen></depends>
+						</kinderen_riemen>
+            <kinderen_handschoenen translate="label">
+							<label>Gloves</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>55</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+              <depends><hoofdgroepen_kinderen>1</hoofdgroepen_kinderen></depends>
+						</kinderen_handschoenen>
+          </fields>
+        </groepen>
+			</groups>
+		</ceesenco_maattabel>
+	</sections>
+</config> 

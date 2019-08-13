@@ -1,0 +1,16 @@
+
+<script type="text/javascript">
+    //<![CDATA[
+    function <?php echo $this->getFunctienaam() ?>() {
+        new Ajax.Request('<?php echo $this->getAjaxCheckUrl() ?>', {
+            method:     'get',
+
+            onSuccess: function(transport){
+            	location.reload();
+            }
+        });
+    }
+    //]]>
+</script>
+
+<?php echo $this->getButtonHtml() ?>

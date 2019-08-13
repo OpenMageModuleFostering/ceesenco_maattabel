@@ -1,0 +1,32 @@
+<?php if ($this->getIsEnabled()) :?>
+<?php
+	$maattabelCategorie = $this->getCategorie();
+	$maattabelUrl = "http://maattabel.ceesenco.com/app/".$this->getLang()."/".$this->getAccountId()."/".$maattabelCategorie;
+	$maattabelWidth = str_replace("px","",$this->getWidth());
+	$maattabelHeight = str_replace("px","",$this->getHeight());
+	$maattabelLabel = $this->getLabel();
+	
+	if (strpos($maattabelWidth, "%") !== false) { $maattabelWidth = "'".$maattabelWidth."'"; }
+	if (strpos($maattabelHeight, "%") !== false) { $maattabelHeight = "'".$maattabelHeight."'"; }
+	
+	if ($maattabelCategorie != "") {
+?>
+
+<script type="text/javascript">
+//<![CDATA[
+j(document).ready(function(){
+	j('a.maattabel').fancybox({
+		'width' : <?php echo $maattabelWidth; ?>,
+		'height' : <?php echo $maattabelHeight; ?>,
+		'autoScale' : 'false',
+		'type'				: 'iframe',
+		'transitionIn'	: 'elastic',
+		'transitionOut'	: 'elastic'
+	});
+});
+//]]>
+</script>
+<div><a class=maattabel href="<?php echo $maattabelUrl; ?>"><button class="button"><span><span><span><?php echo $maattabelLabel; ?></span></span></span></button></a></div>
+
+<?php } ?>
+<?php endif; ?>
