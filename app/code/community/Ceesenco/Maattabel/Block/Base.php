@@ -22,9 +22,21 @@ class Ceesenco_Maattabel_Block_Base extends Mage_Core_Block_Template
     	$this->_height = Mage::getStoreConfig('ceesenco_maattabel/configuration/height');
     	$this->_label = Mage::getStoreConfig('ceesenco_maattabel/configuration/label');
     	$this->_lang = Mage::getStoreConfig('ceesenco_maattabel/configuration/lang');
-    	
-    	$this->_categorie = Mage::getSingleton('catalog/layer')->getCurrentCategory()->getData('maattabel_categorie');
-    	
+
+    	$this->_categorie = Mage::getSingleton("eav/config")->getAttribute("catalog_category", 'maattabel_categorie')->getSource()->getOptionText(Mage::getSingleton('catalog/layer')->getCurrentCategory()->getData('maattabel_categorie'));
+    	if ($this->_categorie == "") {
+		    $current_product = Mage::registry('current_product');
+		    if(is_object($current_product))
+		    {
+		        $categories = $current_product->load($current_product->getId())->getCategoryIds();
+		        if (is_array($categories) and count($categories))
+		        {
+    					$this->_categorie = Mage::getSingleton("eav/config")->getAttribute("catalog_category", 'maattabel_categorie')->getSource()->getOptionText(Mage::getModel('catalog/category')->load($categories[count($categories)-1])->getData('maattabel_categorie'));
+		        }
+		    }
+    	}
+    	$temp = explode(" - ", $this->_categorie);
+    	$this->_categorie = $temp[0];
     }	
 
 	protected function getIsEnabled() {
