@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/ceesenco_maattabel",
+    "name": "openmage-module-fostering\/ceesenco_maattabel",
     "type": "magento-module",
-    "license": "OSL",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Magento interface to the sizing chart module.",
     "authors": [
