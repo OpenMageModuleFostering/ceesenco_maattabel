@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/ceesenco_maattabel",
+    "name": "OpenMageModuleFostering\/ceesenco_maattabel",
     "type": "magento-module",
     "license": "OSL",
     "homepage": "",
     "description": "Magento interface to the sizing chart module.",
     "authors": [
-    {
-        "name": "Kees Heddes",
-        "email": "kees@heddes.net"
-    }
-],
+        {
+            "name": "Kees Heddes",
+            "email": "kees@heddes.net"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
